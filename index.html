@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="US">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div><span>wallet: $</span><span id="wallet">0</span></div>
+        <div><span>total earning: $</span><span id="totalEarning">0</span> / sec</div>
+        <br>
+        <div>
+            <img class="business image" src="img/machine_jidouhanbaiki.png">
+            <div><span>Vending Machine</span></div>
+            <div><span>price : $</span><span id="priceOfVendingMachine">100</span></div>
+            <div><span>number : </span><span id="numberOfVendingMachine">0</span></div>
+            <div><span>profit : $ </span><span id="vendingMachineProfit">0</span> / sec</div>
+            <div><span>total earning : $ </span><span id="vendingMachineTotalEarning">0</span> / sec</div>
+            <input type="button" id="buyVendingMachineButton" onclick="game.buy(businesses.vending)" value="Buy Vending Machine">
+        </div>
+        <br>
+        <div>
+            <img src="img/omise_shop_tatemono.png">
+            <div><span>Grocery Store</span></div>
+            <div><span>price : $</span><span id="priceOfGroceryStore">1000</span></div>
+            <div><span>number : </span><span id="numberOfGroceryStore">0</span></div>
+            <div><span>profit : $ </span><span id="groceryStoreProfit">0</span> / sec</div>
+            <div><span>total earning : $ </span><span id="groceryStoreTotalEarning">0</span> / sec</div>
+            <input type="button" id="buyGroceryStoreButton" onclick="game.buy(businesses.grocery)" value="Buy Grocery Store">
+        </div>
+        <br>
+        <div>
+            <img src="img/tokoya_kanban_signpole.png">
+            <div><span>Hair Salon</span></div>
+            <div><span>price : $</span><span id="priceOfHairSalon">4000</span></div>
+            <div><span>number : </span><span id="numberOfHairSalon">0</span></div>
+            <div><span>profit : $ </span><span id="hairSalonProfit">0</span> / sec</div>
+            <div><span>total earning : $ </span><span id="hairSalonTotalEarning">0</span> / sec</div>
+            <input type="button" id="buyHairSalonButton" onclick="game.buy(businesses.hair)" value="Buy Hair Salon">
+        </div>
+        <br>
+        <div>
+            <img src="img/magic_hand.gif">
+            <input type="button" id="pickUpMoney" onclick="game.pickUpMoney()" value="pick up money">
+            <input type="button" id="levelUpPicker" onclick="game.levelUp()" value="Level Up Picker">
+            <div><span>Picker Level : </span><span id="levelOfPicker">1</span></div>
+            <div><span>Level Up Cost : $</span><span id="priceOfLevelUpPicker">0</span></div>
+            <div><span>level up cost : $</span><span id="levelUpConstOfVendingMachine"></span></div>
+        </div>
+    </div>
+</body>
+</html>
