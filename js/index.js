@@ -48,6 +48,7 @@ class Business extends Observable {
 
     set price(value) {
         this._price = value;
+        this.notifyObservers(this.priceId, value);
     }
 
     get number() {
